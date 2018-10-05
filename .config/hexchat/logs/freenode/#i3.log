@@ -1,0 +1,13 @@
+**** BEGIN LOGGING AT Fri Oct  5 21:12:33 2018
+
+Oct 05 21:12:33 *	Now talking on #i3
+Oct 05 21:12:33 *	Topic for #i3 is: i3 v4.15 released | i3status 2.12 released | i3lock 2.10 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic
+Oct 05 21:12:33 *	Topic for #i3 set by sECuRE!~sECuRE@i3/creator/sECuRE (Fri May 11 11:13:59 2018)
+Oct 05 21:14:36 <colin969>	I'm having trouble figuring out layouts
+Oct 05 21:15:01 <colin969>	It saves fine, but it throws errors at me when I use append_layout
+Oct 05 21:16:19 <colin969>	https://paste.ubuntu.com/p/Syq8XVD3zw/
+Oct 05 21:16:36 <colin969>	I haven't edited the file, so I can't see why it would be.
+Oct 05 21:17:31 <colin969>	My layout file : https://paste.ubuntu.com/p/bmXkK4CJQm/
+Oct 05 21:23:11 *	graphene has quit (Remote host closed the connection)
+Oct 05 21:24:21 *	graphene (~graphene@46.101.134.251) has joined
+Oct 05 21:25:07 *	skontar (~skontar@ip-78-45-32-94.net.upcbroadband.cz) has joined
