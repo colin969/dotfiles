@@ -51,7 +51,7 @@ bindsym $mod+z exec --no-startup-id morc_menu
 
 exec --no-startup-id volumeicon
 ##bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
-exec --no-startup-id pulseaudio
+exec --no-startup-id pulseaudio --start
 #exec --no-startup-id pa-applet
 bindsym $mod+Ctrl+m exec pavucontrol
 
@@ -205,11 +205,12 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 assign [class="Firefox"] $ws2
 assign [class="discord"] $ws7
-assign [class="Spotify"] $ws8
 assign [class="^Steam$" title="Steam*"] $ws3
 assign [class="^Steam$" title="Friends*"] $ws6
 
 # Open specific applications in floating mode
+for_window [class="Spotify"] move to workspace $ws8
+
 for_window [title="alsamixer"] floating enable border pixel 1
 for_window [class="calamares"] floating enable border normal
 for_window [class="Clipgrab"] floating enable
@@ -428,7 +429,5 @@ exec --no-startup-id redshift-gtk -l 53.49642:-2.51973 -t 5000:2500
 exec firefox
 exec discord
 exec_always --no-startup-id ~/.i3/polybar.sh &
-
-exec --no-startup-id i3-msg 'workspace 1:Term; append_layout /home/colinb/.i3/workspace-1.json; exec urxvt -e python3 /home/colinb/polybar-scripts/term/monitor.py; exec urxvt; exec urxvt'
-
+exec /home/colinb/.i3/layout.sh
 exec --no-startup-id i3-msg 'workspace $ws2'

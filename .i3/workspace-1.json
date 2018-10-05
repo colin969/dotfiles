@@ -13,9 +13,9 @@
     "percent": 0.7,
     "swallows": [
        {
-       "class": "^URxvt$"
+       "class": "^URxvt$",
        // "instance": "^urxvt$",
-       // "title": "^colinb\\@colin\\-pc\\-manjaro\\:\\ \\~\\/polybar\\-scripts\\/term$"
+       "title": "^((?!python3).)*$"
        // "transient_for": "^$"
        }
     ],
@@ -66,9 +66,9 @@
             "percent": 0.5,
             "swallows": [
                {
-               "class": "^URxvt$"
+               "class": "^URxvt$",
                // "instance": "^urxvt$",
-               // "title": "^i3\\-save\\-tree\\ \\-\\-workspace\\ 1\\:Term\\ \\>\\ \\~\\/\\.i3\\/workspace\\-1\\.json$"
+               "title": "^((?!python3).)*$"
                // "transient_for": "^$"
                }
             ],

@@ -4,11 +4,11 @@ autologin.username="colin9691"
 autologin.saved_credentials="{\"colin9691\":[\"colin9691\",\"fRmVWhF1bippA0kenJubSwnZtxTi0MIrNx6FMUhqWVkGH29t1wv1Q0JZflXRmYozsHMMz0Oy4uQUO2emFGbpmPtXTl6qiyP2yny/xm9E0bE11nUoX6jolgkQCtRjt+TTAfw0Oy1kbAn+eZ9IAzrHLrE3dccVmFx1dHFFZ1cHnFXUNiWTmSkQPW/2xBVKNOeXPuz78kjXZXVZcU6CRbo4vw==\"]}"
 core.clock_delta=2
 storage.last-location="/home/colinb/.cache/spotify/Storage"
-app.window.position.height=1017
+app.window.position.height=1025
 app.autostart-configured=true
 app.window.position.saved=true
-app.window.position.y=409
+app.window.position.y=401
 app.last-launched-version="1.0.80.480.g51b03ac3"
 app.autostart-mode=""
-app.window.position.x=14
-app.window.position.width=617
+app.window.position.x=969
+app.window.position.width=937
