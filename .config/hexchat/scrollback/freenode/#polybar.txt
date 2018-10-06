@@ -1,4 +1,0 @@
-T 1538842908 19*	Now talking on 22#polybar
-T 1538842908 22*	Topic for 22#polybar is: Documentation available at <https://github.com/jaagr/polybar/wiki> | Contact jaagr on <c@rlberg.se> if you want to help with development and/or project management
-T 1538842908 22*	Topic for 22#polybar set by 26jaagr!~jaagr@unaffiliated/jaagr (24Tue Apr 25 18:13:56 2017)
-T 1538842908 22*	Channel 22#polybar url: 24https://github.com/jaagr/polybar
