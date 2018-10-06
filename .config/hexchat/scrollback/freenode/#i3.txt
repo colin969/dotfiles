@@ -9,3 +9,12 @@ T 1538770651 20<colin969>30	My layout file : https://paste.ubuntu.com/p/b
 T 1538770991 24*	graphene has quit (Remote host closed the connection)
 T 1538771061 23*	graphene (~graphene@46.101.134.25123) has joined
 T 1538771107 23*	skontar (~skontar@ip-78-45-32-94.net.upcbroadband.cz23) has joined
+T 1538832999 19*	Now talking on 22#i3
+T 1538832999 22*	Topic for 22#i3 is: i3 v4.15 released | i3status 2.12 released | i3lock 2.10 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic
+T 1538832999 22*	Topic for 22#i3 set by 26sECuRE!~sECuRE@i3/creator/sECuRE (24Fri May 11 11:13:59 2018)
+T 1538833402 23*	zerotech (~zerotech@2a00:ee2:4f05:6200::2323) has joined
+T 1538833535 24*	zerotech has quit (Client Quit)
+T 1538833628 24*	Amankh has quit (Remote host closed the connection)
+T 1538833650 23*	Amankh (~AmanKh@231.24.100.84.rev.sfr.net23) has joined
+T 1538833928 23*	kmarius (~kmarius@aftr-37-201-194-83.unity-media.net23) has joined
+T 1538833933 FiSHLiM plugin unloaded

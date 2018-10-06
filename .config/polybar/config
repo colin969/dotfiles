@@ -49,9 +49,11 @@ padding-right=2
 module-margin-left=1
 module-marign-right=2
 
-font-0 = misc fixed:pixelsize=20;1
-font-1 = unifont:fontformat=truetype:size=16:antialias=false;0
-font-2 = siji:pixelsize=14;1
+font-0 = "Font Awesome 5 Free:style=Regular:pixelsize=18;2"
+font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=18;2"
+font-2 = "Font Awesome 5 Brands:pixelsize=18;2"
+font-3 = "TerminessTTF Nerd Font Mono:size=16;2"
+
 
 modules-left= bspwm i3
 
@@ -67,7 +69,7 @@ fixed-center = true
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 3
+line-size = 4
 line-color = #f00
 
 border-size = 0
@@ -79,15 +81,13 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = misc fixed:pixelsize=20;1
-font-1 = unifont:fontformat=truetype:size=20;0
-font-2 = siji:pixelsize=20;1
-font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=12;1"
-font-4 = "Font Awesome 5 Free:style=Solid:pixelsize=12;1"
-font-5 = "Font Awesome 5 Brands:style=Regular:pixelsize=12;1"
+font-0 = "Font Awesome 5 Free:style=Regular:pixelsize=20;3"
+font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=20;3"
+font-2 = "Font Awesome 5 Brands:pixelsize=20;3"
+font-3 = "TerminessTTF Nerd Font Mono:size=18;2"
 
 modules-left = bspwm i3
-modules-center = player-mpris-tail
+modules-center = mpd
 modules-right = pulseaudio memory cpu eth temperature date
 
 tray-position = right
@@ -107,12 +107,6 @@ tray-padding = 2
 
 cursor-click = pointer
 cursor-scroll = ns-resize
-
-[module/player-mpris-tail]
-type = custom/script
-exec = ~/polybar-scripts/player-mpris-tail.py -f '{icon} {artist} - {title}' --icon-playing  --icon-paused 
-tail = true
-label = %output%
 
 [module/xwindow]
 type = internal/xwindow
@@ -175,7 +169,7 @@ strip-wsnumbers = true
 
 
 ; Only show workspaces on the same output as the bar
-;pin-workspaces = true
+pin-workspaces = true
 
 label-mode-padding = 2
 label-mode-foreground = #000

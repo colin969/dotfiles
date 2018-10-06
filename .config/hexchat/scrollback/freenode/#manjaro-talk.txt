@@ -1,0 +1,11 @@
+T 1538842899 19*	Now talking on 22#manjaro-talk
+T 1538842899 22*	Topic for 22#manjaro-talk is: Manjaro Talk. Use #manjaro channel for help. You will need to register your nickname with freenode to access #manjaro. https://freenode.net/kb/answer/registration
+T 1538842899 22*	Topic for 22#manjaro-talk set by 26AdityaPatil!~AdityaPat@fqdn.tech (24Sun Jun 24 06:24:45 2018)
+T 1538842899 -18NickServ-	You are now identified for Colin969.
+T 1538842900 18<22manj-budgie18>	hello
+T 1538842983 24*	manj-budgie has quit (Remote host closed the connection)
+T 1538843018 23*	manjaro-user (~manjaro-u@212.3.197.16123) has joined
+T 1538843210 24*	CopyLion has quit (Quit: Later!)
+T 1538843619 23*	manjaro-user_ (~manjaro-u@37.111.46.1423) has joined
+T 1538843702 23*	manjaro-user__ (~manjaro-u@46.219.231.5523) has joined
+T 1538843945 24*	manjaro-user has quit (Quit: Konversation terminated!)

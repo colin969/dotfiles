@@ -253,3 +253,239 @@ Oct 05 21:12:19 *	Received a CTCP VERSION from freenode-connect
 Oct 05 21:12:20 >nickserv<	identify ****
 Oct 05 21:12:26 *	#i3 :Cannot join channel (+r) - you need to be identified with services - see https://freenode.net/kb/answer/registration
 Oct 05 21:12:26 -NickServ-	You are now identified for Colin969.
+**** BEGIN LOGGING AT Sat Oct  6 14:36:11 2018
+
+Oct 06 14:36:11 *	Welcome to the freenode Internet Relay Chat Network colin969
+Oct 06 14:36:11 *	Your host is kornbluth.freenode.net[82.96.96.11/6667], running version ircd-seven-1.1.7
+Oct 06 14:36:11 *	This server was created Mon Aug 27 2018 at 22:52:59 UTC
+Oct 06 14:36:11 *	kornbluth.freenode.net ircd-seven-1.1.7 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+Oct 06 14:36:11 *	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+Oct 06 14:36:11 *	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 SAFELIST ELIST=CTU CPRIVMSG :are supported by this server
+Oct 06 14:36:11 *	CNOTICE KNOCK WHOX ETRACE :are supported by this server
+Oct 06 14:36:11 *	There are 118 users and 83320 invisible on 31 servers
+Oct 06 14:36:11 *	37 :IRC Operators online
+Oct 06 14:36:11 *	27 :unknown connection(s)
+Oct 06 14:36:11 *	49026 :channels formed
+Oct 06 14:36:11 *	I have 5022 clients and 1 servers
+Oct 06 14:36:11 *	5022 5929 :Current local users 5022, max 5929
+Oct 06 14:36:11 *	83438 89381 :Current global users 83438, max 89381
+Oct 06 14:36:11 *	Highest connection count: 5930 (5929 clients) (336953 connections received)
+Oct 06 14:36:11 *	- kornbluth.freenode.net Message of the Day - 
+Oct 06 14:36:11 *	- Welcome to kornbluth.freenode.net in Frankfurt, DE, EU. 
+Oct 06 14:36:11 *	- Thanks to Probe Networks (www.probe-networks.de) for
+Oct 06 14:36:11 *	- sponsoring this server!
+Oct 06 14:36:11 *	-  
+Oct 06 14:36:11 *	- KORNBLUTH, CYRIL M. [1923-1958].  Born in New York City and
+Oct 06 14:36:11 *	- an active member of the Futurians, Cyril Kornbluth sold his
+Oct 06 14:36:11 *	- first story professionally at age 15.  By the 1940's his
+Oct 06 14:36:11 *	- stories appeared widely under several pennames, including
+Oct 06 14:36:11 *	- S.D. Gottesman and Cecil Corman.  He left his university
+Oct 06 14:36:11 *	- studies in Chicago to serve in the Army in Europe during
+Oct 06 14:36:11 *	- WWII, then returned to school and work in Chicago until he
+Oct 06 14:36:11 *	- began writing full-time in 1951.  The author of The Marching
+Oct 06 14:36:11 *	- Morons and the novels The Space Merchants (with Frederik
+Oct 06 14:36:11 *	- Pohl) and The Syndic, he's best known for his biting social
+Oct 06 14:36:11 *	- satire and his collaborations with Pohl and with Judith
+Oct 06 14:36:11 *	- Merril.
+Oct 06 14:36:11 *	- Welcome to freenode - supporting the free and open source
+Oct 06 14:36:11 *	- software communities since 1998.
+Oct 06 14:36:11 *	-  
+Oct 06 14:36:11 *	-   __                               _          _  _   _     _____     _______ 
+Oct 06 14:36:11 *	-  / _|_ __ ___  ___ _ __   ___   __| | ___   _| || |_| |   |_ _\ \   / / ____|
+Oct 06 14:36:11 *	- | |_| '__/ _ \/ _ \ '_ \ / _ \ / _` |/ _ \ |_  ..  _| |    | | \ \ / /|  _|  
+Oct 06 14:36:11 *	- |  _| | |  __/  __/ | | | (_) | (_| |  __/ |_      _| |___ | |  \ V / | |___ 
+Oct 06 14:36:11 *	- |_| |_|  \___|\___|_| |_|\___/ \__,_|\___|   |_||_| |_____|___|  \_/  |_____|
+Oct 06 14:36:11 *	-                                                                              
+Oct 06 14:36:11 *	- November 3rd-4th, Bristol, United Kingdom - see https://freenode.live/
+Oct 06 14:36:11 *	-  
+Oct 06 14:36:11 *	- freenode #live is a community-focused live event designed to build and
+Oct 06 14:36:11 *	- strengthen relationships between Free and Open Source Software (FOSS)
+Oct 06 14:36:11 *	- developers and users. freenode live seeks to raise awareness of and 
+Oct 06 14:36:11 *	- promote FOSS alternatives to proprietary software.
+Oct 06 14:36:11 *	-  
+Oct 06 14:36:11 *	- Facilitating face-to-face interaction, creative workshops, talks and think 
+Oct 06 14:36:11 *	- tanks, freenode #live will bring developers and users together in a nurturing 
+Oct 06 14:36:11 *	- and dynamic environment stimulating the free exchange of ideas and 
+Oct 06 14:36:11 *	- information while fostering cross-project collaboration and dialogue for 
+Oct 06 14:36:11 *	- innovation.
+Oct 06 14:36:11 *	-  
+Oct 06 14:36:11 *	- Please join us in the #live channel on the freenode network, or send us an
+Oct 06 14:36:11 *	- e-mail (team@freenode.live) if you have any questions and would like to
+Oct 06 14:36:11 *	- get involved! Further information will also be posted on the freenode.net 
+Oct 06 14:36:11 *	- website.
+Oct 06 14:36:11 *	-  
+Oct 06 14:36:11 *	- See https://freenode.live/ for more information and to get your tickets!
+Oct 06 14:36:11 *	-  
+Oct 06 14:36:11 *	- We hope to see you there!
+Oct 06 14:36:11 *	-  
+Oct 06 14:36:11 *	-  
+Oct 06 14:36:11 *	- By connecting to freenode you indicate that you have read and
+Oct 06 14:36:11 *	- accept our policies and guidelines as set out on https://freenode.net
+Oct 06 14:36:11 *	-  
+Oct 06 14:36:11 *	- In the event that you observe behaviour that contravenes our policies,
+Oct 06 14:36:11 *	- please notify a volunteer staff member via private message, or send us an
+Oct 06 14:36:11 *	- e-mail to complaints@freenode.net -- we will do our best to address the
+Oct 06 14:36:11 *	- situation within a reasonable period of time, and we may request further
+Oct 06 14:36:11 *	- information or, as appropriate, involve other parties such as channel operators 
+Oct 06 14:36:11 *	- Group Contacts representing an on-topic group.
+Oct 06 14:36:11 *	-  
+Oct 06 14:36:11 *	- freenode runs an open proxy scanner.
+Oct 06 14:36:11 *	-  
+Oct 06 14:36:11 *	- If you are looking for assistance, you will be able to find a list of
+Oct 06 14:36:11 *	- volunteer staff using the '/who freenode/staff/*' command, and you may
+Oct 06 14:36:11 *	- message any of us at any time. Please note that freenode predominantly
+Oct 06 14:36:11 *	- provides assistance via private message, and while we have a network
+Oct 06 14:36:11 *	- channel the primary venue for support requests is via private message to
+Oct 06 14:36:11 *	- a member of the volunteer staff team.
+Oct 06 14:36:11 *	-  
+Oct 06 14:36:11 *	- From time to time, volunteer staff may send server-wide notices relating to
+Oct 06 14:36:11 *	- the project, or the communities that we host. The majority of such notices
+Oct 06 14:36:11 *	- will be sent as wallops, and you can '/mode <yournick> +w' to ensure that you
+Oct 06 14:36:11 *	- do not miss them. Important messages relating to the freenode project, including
+Oct 06 14:36:11 *	- notices of upcoming maintenance and other scheduled downtime will be issued as
+Oct 06 14:36:11 *	- global notices.
+Oct 06 14:36:11 *	-  
+Oct 06 14:36:11 *	- Representing an on-topic project? Don't forget to register, more information
+Oct 06 14:36:11 *	- can be found on the https://freenode.net website under "Group Registration".
+Oct 06 14:36:11 *	-  
+Oct 06 14:36:11 *	- freenode organises an annual conference, and we would like to extend our
+Oct 06 14:36:11 *	- thanks to the attendees, exhibitors and speakers who made freenode #live 2017
+Oct 06 14:36:11 *	- possible. And of course, our generous sponsors: Bytemark, Canonical (Ubuntu),
+Oct 06 14:36:11 *	- Falanx Cyber Security, Private Internet Access and Yubico for footing the bill.
+Oct 06 14:36:11 *	-  
+Oct 06 14:36:11 *	- Thank you also to our server sponsors for the sustained support in keeping the
+Oct 06 14:36:11 *	- network going for close to two decades.
+Oct 06 14:36:11 *	-  
+Oct 06 14:36:11 *	- freenode #live returns to Bristol, UK on November 3rd-4th 2018. Our Call for
+Oct 06 14:36:11 *	- Proposals is live at https://freenode.live and open until July 31, 2018. If 
+Oct 06 14:36:11 *	- you are interested in sponsoring this event, please send an e-mail to
+Oct 06 14:36:11 *	- sponsor@freenode.live
+Oct 06 14:36:11 *	-  
+Oct 06 14:36:11 *	- Thank you for using freenode!
+Oct 06 14:36:11 *	-  
+Oct 06 14:36:11 *	-  
+Oct 06 14:36:11 *	End of /MOTD command.
+Oct 06 14:36:11 *	colin969 sets mode +R on colin969
+Oct 06 14:36:11 *	colin969 sets mode +i on colin969
+Oct 06 14:36:11 -NickServ-	This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+Oct 06 14:36:11 -freenode-connect-	Due to the persistent ongoing spam, all new connections are being set +R (block messages from unidentified users) and will be scanned for vulnerabilities. This will not harm your computer, and vulnerable hosts will be notified.
+Oct 06 14:36:12 *	Received a CTCP VERSION from freenode-connect
+Oct 06 14:36:16 *	#i3 :Cannot join channel (+r) - you need to be identified with services - see https://freenode.net/kb/answer/registration
+Oct 06 14:36:17 >nickserv<	identify ****
+Oct 06 14:36:17 -NickServ-	You are now identified for Colin969.
+**** BEGIN LOGGING AT Sat Oct  6 17:21:33 2018
+
+Oct 06 17:21:33 *	Welcome to the freenode Internet Relay Chat Network colin969
+Oct 06 17:21:33 *	Your host is verne.freenode.net[185.30.166.38/6667], running version ircd-seven-1.1.7
+Oct 06 17:21:33 *	This server was created Thu Sep 20 2018 at 01:29:38 UTC
+Oct 06 17:21:33 *	verne.freenode.net ircd-seven-1.1.7 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+Oct 06 17:21:33 *	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+Oct 06 17:21:33 *	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 ETRACE WHOX KNOCK :are supported by this server
+Oct 06 17:21:33 *	SAFELIST ELIST=CTU CPRIVMSG CNOTICE :are supported by this server
+Oct 06 17:21:33 *	There are 118 users and 84069 invisible on 31 servers
+Oct 06 17:21:33 *	37 :IRC Operators online
+Oct 06 17:21:33 *	28 :unknown connection(s)
+Oct 06 17:21:33 *	49141 :channels formed
+Oct 06 17:21:33 *	I have 6471 clients and 1 servers
+Oct 06 17:21:33 *	6471 7198 :Current local users 6471, max 7198
+Oct 06 17:21:33 *	84187 88692 :Current global users 84187, max 88692
+Oct 06 17:21:33 *	Highest connection count: 7199 (7198 clients) (385875 connections received)
+Oct 06 17:21:33 *	- verne.freenode.net Message of the Day - 
+Oct 06 17:21:33 *	- Welcome to verne.freenode.net in Amsterdam, NL.
+Oct 06 17:21:33 *	- Thanks to http://www.hyperfilter.com/ for sponsoring
+Oct 06 17:21:33 *	- this server!
+Oct 06 17:21:33 *	-  
+Oct 06 17:21:33 *	-  
+Oct 06 17:21:33 *	- VERNE, Jules (1828-1905). Born in Nantes, France, Verne was
+Oct 06 17:21:33 *	- a pioneering french author known for novels such as Twenty
+Oct 06 17:21:33 *	- Thousand Leagues Under the Sea, A Journey to the Center of the
+Oct 06 17:21:33 *	- Earth, and Around the World in Eighty Days. Often lauded as the
+Oct 06 17:21:33 *	- Father of science fiction, Verne wrote about concepts such as
+Oct 06 17:21:33 *	- space travel, skyscrapers, and worldwide communications
+Oct 06 17:21:33 *	- networks long before these ideas became popularised or realised.
+Oct 06 17:21:33 *	-  
+Oct 06 17:21:33 *	- Welcome to freenode - supporting the free and open source
+Oct 06 17:21:33 *	- software communities since 1998.
+Oct 06 17:21:33 *	-  
+Oct 06 17:21:33 *	-   __                               _          _  _   _     _____     _______ 
+Oct 06 17:21:33 *	-  / _|_ __ ___  ___ _ __   ___   __| | ___   _| || |_| |   |_ _\ \   / / ____|
+Oct 06 17:21:33 *	- | |_| '__/ _ \/ _ \ '_ \ / _ \ / _` |/ _ \ |_  ..  _| |    | | \ \ / /|  _|  
+Oct 06 17:21:33 *	- |  _| | |  __/  __/ | | | (_) | (_| |  __/ |_      _| |___ | |  \ V / | |___ 
+Oct 06 17:21:33 *	- |_| |_|  \___|\___|_| |_|\___/ \__,_|\___|   |_||_| |_____|___|  \_/  |_____|
+Oct 06 17:21:33 *	-                                                                              
+Oct 06 17:21:33 *	- November 3rd-4th, Bristol, United Kingdom - see https://freenode.live/
+Oct 06 17:21:33 *	-  
+Oct 06 17:21:33 *	- freenode #live is a community-focused live event designed to build and
+Oct 06 17:21:33 *	- strengthen relationships between Free and Open Source Software (FOSS)
+Oct 06 17:21:33 *	- developers and users. freenode live seeks to raise awareness of and 
+Oct 06 17:21:33 *	- promote FOSS alternatives to proprietary software.
+Oct 06 17:21:33 *	-  
+Oct 06 17:21:33 *	- Facilitating face-to-face interaction, creative workshops, talks and think 
+Oct 06 17:21:33 *	- tanks, freenode #live will bring developers and users together in a nurturing 
+Oct 06 17:21:33 *	- and dynamic environment stimulating the free exchange of ideas and 
+Oct 06 17:21:33 *	- information while fostering cross-project collaboration and dialogue for 
+Oct 06 17:21:33 *	- innovation.
+Oct 06 17:21:33 *	-  
+Oct 06 17:21:33 *	- Please join us in the #live channel on the freenode network, or send us an
+Oct 06 17:21:33 *	- e-mail (team@freenode.live) if you have any questions and would like to
+Oct 06 17:21:33 *	- get involved! Further information will also be posted on the freenode.net 
+Oct 06 17:21:33 *	- website.
+Oct 06 17:21:33 *	-  
+Oct 06 17:21:33 *	- See https://freenode.live/ for more information and to get your tickets!
+Oct 06 17:21:33 *	-  
+Oct 06 17:21:33 *	- We hope to see you there!
+Oct 06 17:21:33 *	-  
+Oct 06 17:21:33 *	-  
+Oct 06 17:21:33 *	- By connecting to freenode you indicate that you have read and
+Oct 06 17:21:33 *	- accept our policies and guidelines as set out on https://freenode.net
+Oct 06 17:21:33 *	-  
+Oct 06 17:21:33 *	- In the event that you observe behaviour that contravenes our policies,
+Oct 06 17:21:33 *	- please notify a volunteer staff member via private message, or send us an
+Oct 06 17:21:33 *	- e-mail to complaints@freenode.net -- we will do our best to address the
+Oct 06 17:21:33 *	- situation within a reasonable period of time, and we may request further
+Oct 06 17:21:33 *	- information or, as appropriate, involve other parties such as channel operators 
+Oct 06 17:21:33 *	- Group Contacts representing an on-topic group.
+Oct 06 17:21:33 *	-  
+Oct 06 17:21:33 *	- freenode runs an open proxy scanner.
+Oct 06 17:21:33 *	-  
+Oct 06 17:21:33 *	- If you are looking for assistance, you will be able to find a list of
+Oct 06 17:21:33 *	- volunteer staff using the '/who freenode/staff/*' command, and you may
+Oct 06 17:21:33 *	- message any of us at any time. Please note that freenode predominantly
+Oct 06 17:21:33 *	- provides assistance via private message, and while we have a network
+Oct 06 17:21:33 *	- channel the primary venue for support requests is via private message to
+Oct 06 17:21:33 *	- a member of the volunteer staff team.
+Oct 06 17:21:33 *	-  
+Oct 06 17:21:33 *	- From time to time, volunteer staff may send server-wide notices relating to
+Oct 06 17:21:33 *	- the project, or the communities that we host. The majority of such notices
+Oct 06 17:21:33 *	- will be sent as wallops, and you can '/mode <yournick> +w' to ensure that you
+Oct 06 17:21:33 *	- do not miss them. Important messages relating to the freenode project, including
+Oct 06 17:21:33 *	- notices of upcoming maintenance and other scheduled downtime will be issued as
+Oct 06 17:21:33 *	- global notices.
+Oct 06 17:21:33 *	-  
+Oct 06 17:21:33 *	- Representing an on-topic project? Don't forget to register, more information
+Oct 06 17:21:33 *	- can be found on the https://freenode.net website under "Group Registration".
+Oct 06 17:21:33 *	-  
+Oct 06 17:21:33 *	- freenode organises an annual conference, and we would like to extend our
+Oct 06 17:21:33 *	- thanks to the attendees, exhibitors and speakers who made freenode #live 2017
+Oct 06 17:21:33 *	- possible. And of course, our generous sponsors: Bytemark, Canonical (Ubuntu),
+Oct 06 17:21:33 *	- Falanx Cyber Security, Private Internet Access and Yubico for footing the bill.
+Oct 06 17:21:33 *	-  
+Oct 06 17:21:33 *	- Thank you also to our server sponsors for the sustained support in keeping the
+Oct 06 17:21:33 *	- network going for close to two decades.
+Oct 06 17:21:33 *	-  
+Oct 06 17:21:33 *	- freenode #live returns to Bristol, UK on November 3rd-4th 2018. Our Call for
+Oct 06 17:21:33 *	- Proposals is live at https://freenode.live and open until July 31, 2018. If 
+Oct 06 17:21:33 *	- you are interested in sponsoring this event, please send an e-mail to
+Oct 06 17:21:33 *	- sponsor@freenode.live
+Oct 06 17:21:33 *	-  
+Oct 06 17:21:33 *	- Thank you for using freenode!
+Oct 06 17:21:33 *	-  
+Oct 06 17:21:33 *	-  
+Oct 06 17:21:33 *	End of /MOTD command.
+Oct 06 17:21:33 *	colin969 sets mode +R on colin969
+Oct 06 17:21:33 *	colin969 sets mode +i on colin969
+Oct 06 17:21:33 -NickServ-	This nickname is registered. Please choose a different nickname, or identify via /msg NickServ identify <password>.
+Oct 06 17:21:34 -freenode-connect-	Due to the persistent ongoing spam, all new connections are being set +R (block messages from unidentified users) and will be scanned for vulnerabilities. This will not harm your computer, and vulnerable hosts will be notified.
+Oct 06 17:21:34 *	Received a CTCP VERSION from freenode-connect
+Oct 06 17:21:38 >nickserv<	identify ****
+Oct 06 17:21:39 *	#manjaro #manjaro-unregistered :Forwarding to another channel

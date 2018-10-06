@@ -144,18 +144,22 @@ bindsym $mod+minus scratchpad show
 bindsym $mod+Ctrl+Right move workspace to output right
 bindsym $mod+Ctrl+Left move workspace to output left
 
+# focus workspace
+bindsym --whole-window --border $mod+button4 workspace next_on_output
+bindsym --whole-window --border $mod+button5 workspace prev_on_output
+
 # Workspace names
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
-set $ws1 1:Term
-set $ws2 2:Firefox
-set $ws3 3:Steam
-set $ws4 4:Active
-set $ws5 5:Misc
-set $ws6 6:SChat
-set $ws7 7:Discord
-set $ws8 8:Music
+set $ws1 1:
+set $ws2 2:
+set $ws3 3:
+set $ws4 4:
+set $ws5 5:
+set $ws6 6:
+set $ws7 7:
+set $ws8 8:
 
 workspace $ws2 output $1m
 workspace $ws3 output $1m
@@ -205,6 +209,7 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 assign [class="Firefox"] $ws2
 assign [class="discord"] $ws7
+assign [class="smplayer"] $ws5
 assign [class="^Steam$" title="Steam*"] $ws3
 assign [class="^Steam$" title="Friends*"] $ws6
 
@@ -431,3 +436,4 @@ exec discord
 exec_always --no-startup-id ~/.i3/polybar.sh &
 exec /home/colinb/.i3/layout.sh
 exec --no-startup-id i3-msg 'workspace $ws2'
+exec --no-startup-id xkbcomp /home/colinb/.capslockmap $DISPLAY

@@ -27,3 +27,31 @@ Oct 05 21:12:19 *	Capabilities requested: account-notify extended-join identify-
 Oct 05 21:12:19 *	Capabilities acknowledged: account-notify extended-join identify-msg multi-prefix 
 **** ENDING LOGGING AT Fri Oct  5 21:12:19 2018
 
+**** BEGIN LOGGING AT Sat Oct  6 14:36:01 2018
+
+Oct 06 14:36:01 Perl interface loaded
+Oct 06 14:36:01 Sysinfo plugin loaded
+Oct 06 14:36:01 Checksum plugin loaded
+Oct 06 14:36:01 Lua version 1.3/5.3 loaded.
+Oct 06 14:36:01 Python interface loaded
+Oct 06 14:36:01 FiSHLiM plugin loaded
+Oct 06 14:36:01 *	Looking up chat.freenode.net
+Oct 06 14:36:01 *	Connecting to chat.freenode.net (82.96.96.11:6667)
+Oct 06 14:36:01 *	Connected. Now logging in.
+Oct 06 14:36:01 *	*** Looking up your hostname...
+Oct 06 14:36:01 *	*** Checking Ident
+Oct 06 14:36:01 *	*** Found your hostname
+Oct 06 14:36:11 *	*** No Ident response
+Oct 06 14:36:11 *	Capabilities supported: account-notify extended-join identify-msg multi-prefix sasl
+Oct 06 14:36:11 *	Capabilities requested: account-notify extended-join identify-msg multi-prefix 
+Oct 06 14:36:11 *	Capabilities acknowledged: account-notify extended-join identify-msg multi-prefix 
+**** ENDING LOGGING AT Sat Oct  6 14:36:11 2018
+
+**** BEGIN LOGGING AT Sat Oct  6 17:21:25 2018
+
+Oct 06 17:21:25 Perl interface loaded
+Oct 06 17:21:25 Sysinfo plugin loaded
+Oct 06 17:21:25 Checksum plugin loaded
+Oct 06 17:21:25 Lua version 1.3/5.3 loaded.
+Oct 06 17:21:25 Python interface loaded
+Oct 06 17:21:25 FiSHLiM plugin loaded

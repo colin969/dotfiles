@@ -1,0 +1,14 @@
+**** BEGIN LOGGING AT Sat Oct  6 17:21:25 2018
+
+Oct 06 17:21:25 *	Looking up chat.freenode.net
+Oct 06 17:21:25 *	Connecting to chat.freenode.net (185.30.166.38:6667)
+Oct 06 17:21:25 *	Connected. Now logging in.
+Oct 06 17:21:25 *	*** Looking up your hostname...
+Oct 06 17:21:25 *	*** Checking Ident
+Oct 06 17:21:25 *	*** Found your hostname
+Oct 06 17:21:33 *	*** No Ident response
+Oct 06 17:21:33 *	Capabilities supported: account-notify extended-join identify-msg multi-prefix sasl
+Oct 06 17:21:33 *	Capabilities requested: account-notify extended-join identify-msg multi-prefix 
+Oct 06 17:21:33 *	Capabilities acknowledged: account-notify extended-join identify-msg multi-prefix 
+**** ENDING LOGGING AT Sat Oct  6 17:21:33 2018
+
