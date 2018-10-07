@@ -437,3 +437,12 @@ exec_always --no-startup-id ~/.i3/polybar.sh &
 exec /home/colinb/.i3/layout.sh
 exec --no-startup-id i3-msg 'workspace $ws2'
 exec --no-startup-id xkbcomp /home/colinb/.capslockmap $DISPLAY
+
+bindsym XF86AudioMute exec amixer -D pulse sset Master 1+ toggle
+bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+
+bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%-
+
+bindsym XF86AudioPlay exec "mpc toggle; playerctl play-pause"
+bindsym XF86AudioStop exec "mpc stop; playerctl stop"
+bindsym XF86AudioNext exec "mpc next; playerctl next"
+bindsym XF86AudioPrev exec "mpc prev; playerctl previous"
