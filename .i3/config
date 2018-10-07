@@ -69,7 +69,7 @@ bindsym $mod+F3 exec pcmanfm
 bindsym $mod+Shift+F3 exec gksu pcmanfm
 bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
-bindsym $mod+Ctrl+t exec --no-startup-id compton -b
+bindsym $mod+Ctrl+t exec --no-startup-id compton -b --config /home/colinb/.config/compton.conf
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym Print exec --no-startup-id ~/Scripts/imgur-screenshot.sh --open false
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
@@ -168,7 +168,7 @@ workspace $ws5 output $1m
 
 workspace $ws1 output $2m
 workspace $ws6 output $2m
-workspace $ws7 output $2m
+workspace $ws7 output $1m
 workspace $ws8 output $2m
 
 # switch to workspace

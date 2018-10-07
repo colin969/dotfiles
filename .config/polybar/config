@@ -87,8 +87,8 @@ font-2 = "Font Awesome 5 Brands:pixelsize=20;3"
 font-3 = "TerminessTTF Nerd Font Mono:size=18;2"
 
 modules-left = bspwm i3
-modules-center = mpd
-modules-right = pulseaudio memory cpu eth temperature date
+modules-center = mpd_status
+modules-right = pulseaudio date
 
 tray-position = right
 tray-padding = 2
@@ -137,6 +137,11 @@ mount-0 = /
 label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
+
+[module/mpd_status]
+type = custom/script
+exec = python -u ~/polybar-scripts/mpd_status.py
+tail = true
 
 [module/bspwm]
 type = internal/bspwm
@@ -203,6 +208,9 @@ label-urgent-padding = ${module/bspwm.label-urgent-padding}
 [module/mpd]
 type = internal/mpd
 format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+
+host = 127.0.0.1
+port = 6600
 
 icon-prev = 
 icon-stop = 
