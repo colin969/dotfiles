@@ -5,6 +5,8 @@ SAVEHIST=1000
 bindkey -e
 # End of lines configured by zsh-newuser-install
 
+alias m="micro"
+
 POWERLEVEL9K_CARRIAGE_RETURN_ICON=" "
 POWERLEVEL9K_OK_ICON=" "
 POWERLEVEL9K_MODE="nerdfont-complete"
@@ -13,3 +15,4 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 export DEFAULT_USER="$(whoami)"
 
 source $ZSH/oh-my-zsh.sh
+# The following lines were added by compinstall
