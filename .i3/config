@@ -51,7 +51,7 @@ bindsym $mod+z exec --no-startup-id morc_menu
 
 exec --no-startup-id volumeicon
 ##bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
-exec --no-startup-id pulseaudio --start
+exec --no-startup-id start-pulseaudio-x11
 #exec --no-startup-id pa-applet
 bindsym $mod+Ctrl+m exec pavucontrol
 
@@ -430,6 +430,7 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
+exec --no-startup-id /opt/pia/run.sh
 exec --no-startup-id redshift-gtk -l 53.49642:-2.51973 -t 5000:2500
 exec firefox
 exec discord

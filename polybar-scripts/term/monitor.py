@@ -197,7 +197,7 @@ def update(screen):
     if(net_stats[2] != vpn_state):
         get_ip()
         vpn_state = net_stats[2]
-    net_lines = get_columns(net, "{:<13} {:>12} {:>12}")
+    net_lines = get_columns(net, "{:<15} {:>10} {:>12}")
     net_lines[0].set_meta(curses.color_pair(1) | curses.A_BOLD)
     
     
@@ -227,10 +227,12 @@ cpu_q = collections.deque()
 net_q_sent = collections.deque()
 net_q_recv = collections.deque()
 vpn_state = 'start'
-ip = ipgetter.myip()
+ip = "Finding..."
 ip_q = Queue()
 
 if __name__ == "__main__":
+    get_ip()
+
     screen = curses.initscr()
     curses.noecho()
     curses.curs_set(0)
