@@ -159,7 +159,7 @@ set $ws4 4:
 set $ws5 5:
 set $ws6 6:
 set $ws7 7:
-set $ws8 8:
+set $ws8 8:
 
 workspace $ws2 output $1m
 workspace $ws3 output $1m
@@ -210,6 +210,7 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 assign [class="Firefox"] $ws2
 assign [class="discord"] $ws7
 assign [class="smplayer"] $ws5
+assign [class="Pcmanfm"] $ws8
 assign [class="^Steam$" title="Steam*"] $ws3
 assign [class="^Steam$" title="Friends*"] $ws6
 
