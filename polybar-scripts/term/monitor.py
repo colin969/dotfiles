@@ -151,13 +151,17 @@ def update(screen):
     
 
     # Disks
-
+    total_disk_used = psutil.disk_usage('/').used + psutil.disk_usage('/mnt/data').used + psutil.disk_usage('/mnt/ntfs').used + psutil.disk_usage('/mnt/ntfs3').used + psutil.disk_usage('/mnt/ntfs2').used
+    total_disk_total = psutil.disk_usage('/').total + psutil.disk_usage('/mnt/data').total + psutil.disk_usage('/mnt/ntfs').total + psutil.disk_usage('/mnt/ntfs3').total + psutil.disk_usage('/mnt/ntfs2').total
+    total_disk_percent = total_disk_used / total_disk_total
+    
     disks = [["Disk", "Used", "Total", "Percent"]]
     disks.append([pad("Root Disk")] + get_space_string('/'))
     disks.append([pad("Data Disk")] + get_space_string('/mnt/data'))
     disks.append([pad("NTFS Disk 1")] + get_space_string('/mnt/ntfs'))
     disks.append([pad("NTFS Disk 2")] + get_space_string('/mnt/ntfs3'))
     disks.append([pad("NTFS Disk 3")] + get_space_string('/mnt/ntfs2'))
+    disks.append([pad("Total"), sizeof_fmt(total_disk_used), sizeof_fmt(total_disk_total), "{:.1f}%".format(total_disk_percent*100)])
     disks_lines = get_columns(disks)
     disks_lines[0].set_meta(curses.color_pair(1) | curses.A_BOLD)
 
@@ -206,7 +210,7 @@ def update(screen):
     global banner
     offset_y = draw_to_screen(offset_y, offset_x, banner, screen)
 
-    offset_y = draw_to_screen(offset_y+1, offset_x, [Line("CPU Usage - {0:.1f}%".format(cpu_percent))], screen)
+    offset_y = draw_to_screen(offset_y, offset_x, [Line("CPU Usage - {0:.1f}%".format(cpu_percent))], screen)
     draw_bar(offset_y, offset_x, screen, 52, cpu_percent)
     offset_y += 2
 
