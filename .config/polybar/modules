@@ -17,37 +17,50 @@ type = internal/i3
 format = <label-state> <label-mode>
 index-sort = true
 wrapping-scroll = false
+strip-wsnumbers = true
+fuzzy-match = true
+
 
 ; Only show workspaces on the same output as the bar
-;pin-workspaces = true
+pin-workspaces = true
 
 label-mode-padding = 2
 label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
-label-focused = %index%
+label-focused = %icon% %name%
 label-focused-background = ${colors.background-alt}
 label-focused-underline = ${colors.primary}
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
-label-unfocused = %index%
+label-unfocused = %icon% %name%
 label-unfocused-padding = 2
 
 ; visible = Active workspace on unfocused monitor
-label-visible = %index%
+label-visible = %icon% %name%
 label-visible-background = ${colors.background-alt}
 label-visible-underline = ${colors.primary}
 label-visible-padding = 2
 
 ; urgent = Workspace with urgency hint set
-label-urgent = %index%
+label-urgent = %icon% %name%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
 ; Separator in between workspaces
-; label-separator = |
+label-separator = :
+
+ws-icon-0 = Terminal;
+ws-icon-1 = Web;
+ws-icon-2 = Play;
+ws-icon-3 = Steam;
+ws-icon-4 = Media;
+ws-icon-5 = Chat;
+ws-icon-6 = Discord;
+ws-icon-7 = Virtual;
+wd-icon-default = 
 
 [module/mpd]
 type = internal/mpd

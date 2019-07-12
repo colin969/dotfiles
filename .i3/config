@@ -97,7 +97,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # workspace back and forth (with/without active container)
-workspace_auto_back_and_forth yes
+workspace_auto_back_and_forth no
 bindsym $mod+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
@@ -137,18 +137,32 @@ bindsym $mod+minus scratchpad show
 bindsym $mod+Ctrl+Right move workspace to output right
 bindsym $mod+Ctrl+Left move workspace to output left
 
+# Monitors
+set $1m DP-4
+set $2m DVI-I-1
+
 # Workspace names
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
-set $ws1 1
-set $ws2 2
-set $ws3 3
-set $ws4 4
-set $ws5 5
-set $ws6 6
-set $ws7 7
-set $ws8 8
+set $ws1 1:Terminal
+set $ws2 2:Web
+set $ws3 3:Play
+set $ws4 4:Steam
+set $ws5 5:Media
+set $ws6 6:Chat
+set $ws7 7:Discord
+set $ws8 8:Virtual
+
+workspace $ws1 output $2m
+workspace $ws2 output $1m
+workspace $ws3 output $1m
+workspace $ws4 output $1m
+
+workspace $ws5 output $1m
+workspace $ws6 output $2m
+workspace $ws7 output $2m
+workspace $ws8 output $2m
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -331,9 +345,9 @@ set_from_resource $term_color15    color15
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          #556064 #556064 #80FFF9 #FDF6E3
-  client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
-  client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
+  client.focused          #321515 #492015 #80FFF9 #FDF6E3
+  client.focused_inactive #2F3D44 #221515 #1ABC9C #454948
+  client.unfocused        #151010 #221515 #1ABC9C #454948
   client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
   client.placeholder      #000000 #0c0c0c #ffffff #000000 
 
@@ -402,3 +416,5 @@ mode "$mode_gaps_outer" {
 
 exec_always --no-startup-id ~/.i3/polybar.sh &
 
+## Nvidia fix
+force_xinerama no

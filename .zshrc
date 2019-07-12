@@ -195,6 +195,7 @@ case $(basename "$(cat "/proc/$PPID/comm")") in
     ;;
 esac
 
+export MICRO_TRUECOLOR=1
 ZSH_HIGHLIGHT_STYLES[command]='fg=#FF8888'
 ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=#881111,bold'
 neofetch
