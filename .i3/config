@@ -1,11 +1,6 @@
 # i3 config file (v4)
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-# Monitors
-
-set $1m DP-4
-set $2m DVI-I-1
-
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod1
 
@@ -13,7 +8,7 @@ set $mod Mod1
 # workspace_layout tabbed <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-new_window pixel 2
+new_window pixel 3
 new_float normal
 
 # Hide borders
@@ -21,7 +16,7 @@ hide_edge_borders none
 
 # change borders
 bindsym $mod+u border none
-bindsym $mod+y border pixel 1
+bindsym $mod+y border pixel 3
 bindsym $mod+n border normal
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -32,26 +27,24 @@ font xft:URWGothic-Book 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec terminal
+bindsym $mod+Return exec termite -e zsh
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+Shift+d exec --no-startup-id dmenu_recency
+bindsym $mod+d exec --no-startup-id rofi -theme Arc-Dark -show drun
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
-
 
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
 
 exec --no-startup-id volumeicon
-##bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
-exec --no-startup-id start-pulseaudio-x11
+#bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
+exec --no-startup-id pulseaudio
 #exec --no-startup-id pa-applet
 bindsym $mod+Ctrl+m exec pavucontrol
 
@@ -64,18 +57,18 @@ bindsym $mod+Ctrl+m exec pavucontrol
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+F2 exec firefox
-bindsym $mod+F3 exec pcmanfm
-# bindsym $mod+F3 exec ranger
+# bindsym $mod+F3 exec pcmanfm
+bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec gksu pcmanfm
 bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
-bindsym $mod+Ctrl+t exec --no-startup-id compton -b --config /home/colinb/.config/compton.conf
+bindsym $mod+Ctrl+t exec --no-startup-id compton -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
-bindsym Print exec --no-startup-id ~/Scripts/imgur-screenshot.sh --open false
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
+bindsym Print exec --no-startup-id ~/.i3/imgur-screenshot.sh --open false
 
 # focus_follows_mouse no
 
@@ -140,36 +133,22 @@ bindsym $mod+Shift+minus move scratchpad
 # If there are multiple scratchpad windows, this command cycles through them.
 bindsym $mod+minus scratchpad show
 
-# move workspaces
+#navigate workspaces next / previous
 bindsym $mod+Ctrl+Right move workspace to output right
 bindsym $mod+Ctrl+Left move workspace to output left
-
-# focus workspace
-bindsym --whole-window --border $mod+button4 workspace next_on_output
-bindsym --whole-window --border $mod+button5 workspace prev_on_output
 
 # Workspace names
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
-set $ws1 1:
-set $ws2 2:
-set $ws3 3:
-set $ws4 4:
-set $ws5 5:
-set $ws6 6:
-set $ws7 7:
-set $ws8 8:
-
-workspace $ws2 output $1m
-workspace $ws3 output $1m
-workspace $ws4 output $1m
-workspace $ws5 output $1m
-
-workspace $ws1 output $2m
-workspace $ws6 output $2m
-workspace $ws7 output $1m
-workspace $ws8 output $2m
+set $ws1 1
+set $ws2 2
+set $ws3 3
+set $ws4 4
+set $ws5 5
+set $ws6 6
+set $ws7 7
+set $ws8 8
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -203,20 +182,11 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 # Open applications on specific workspaces
 # assign [class="Thunderbird"] $ws1
-# assign [class="Firefox"] $ws2
+# assign [class="Pale moon"] $ws2
 # assign [class="Pcmanfm"] $ws3
 # assign [class="Skype"] $ws5
 
-assign [class="Firefox"] $ws2
-assign [class="discord"] $ws7
-assign [class="smplayer"] $ws5
-assign [class="Pcmanfm"] $ws8
-assign [class="^Steam$" title="Steam*"] $ws3
-assign [class="^Steam$" title="Friends*"] $ws6
-
 # Open specific applications in floating mode
-for_window [class="Spotify"] move to workspace $ws8
-
 for_window [title="alsamixer"] floating enable border pixel 1
 for_window [class="calamares"] floating enable border normal
 for_window [class="Clipgrab"] floating enable
@@ -243,12 +213,6 @@ for_window [class="Skype"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
-
-# Unity
-for_window [class="^Unity$" title="^Starting Unity...$"] floating enable
-for_window [class="^Unity$" title="^Hold On$"] floating enable
-for_window [class="^Unity$" title="^Preparing Package$"] floating enable
-for_window [class="^Unity$" title="^Importing Package$"] floating enable
 
 # https://github.com/ValveSoftware/steam-for-linux/issues/1040
 for_window [class="^Steam$" title="^Friends$"] floating enable
@@ -321,15 +285,16 @@ bindsym $mod+9 exec --no-startup-id blurlock
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
-#exec --no-startup-id manjaro-hello
+# exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
-exec --no-startup-id start_conky_maia
+# exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
+exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
@@ -379,7 +344,7 @@ set_from_resource $term_color15    color15
 #############################
 
 # Set inner/outer gaps
-gaps inner 14
+gaps inner 21
 gaps outer -2
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
@@ -411,7 +376,7 @@ mode "$mode_gaps_inner" {
         bindsym minus gaps inner current minus 5
         bindsym 0     gaps inner current set 0
 
-        bindsym Shift+plus  gaps inner all plus 5r
+        bindsym Shift+plus  gaps inner all plus 5
         bindsym Shift+minus gaps inner all minus 5
         bindsym Shift+0     gaps inner all set 0
 
@@ -431,20 +396,9 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-exec --no-startup-id /opt/pia/run.sh
-exec --no-startup-id redshift-gtk -l 53.49642:-2.51973 -t 5000:2500
-exec firefox
-exec discord
+## Startup
+
+## Reload
+
 exec_always --no-startup-id ~/.i3/polybar.sh &
-exec /home/colinb/.i3/layout.sh
-exec --no-startup-id i3-msg 'workspace $ws2'
-exec --no-startup-id xkbcomp /home/colinb/.capslockmap $DISPLAY
 
-bindsym XF86AudioMute exec amixer -D pulse sset Master 1+ toggle
-bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+
-bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%-
-
-bindsym XF86AudioPlay exec "mpc toggle; playerctl play-pause"
-bindsym XF86AudioStop exec "mpc stop; playerctl stop"
-bindsym XF86AudioNext exec "mpc next; playerctl next"
-bindsym XF86AudioPrev exec "mpc prev; playerctl previous"
