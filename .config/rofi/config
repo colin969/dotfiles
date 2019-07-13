@@ -1,0 +1,3 @@
+rofi.theme: solarized_custom
+rofi.font: SourceCodePro 16
+rofi.modi: drun
