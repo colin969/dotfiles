@@ -42,7 +42,7 @@ bindsym $mod+z exec --no-startup-id morc_menu
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
 
-exec --no-startup-id volumeicon
+#exec --no-startup-id volumeicon
 #bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 exec --no-startup-id pulseaudio
 #exec --no-startup-id pa-applet
@@ -416,9 +416,22 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-## Startup
+## Binds
 
-## Reload
+# Specific to Pulseaudio
+
+bindsym XF86AudioMute exec amixer -D pulse sset Master 1+ toggle
+bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+
+bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%-
+
+# Requires Playerctl or MPC
+
+bindsym XF86AudioPlay exec "mpc toggle; playerctl play-pause"
+bindsym XF86AudioStop exec "mpc stop; playerctl stop"
+bindsym XF86AudioNext exec "mpc next; playerctl next"
+bindsym XF86AudioPrev exec "mpc prev; playerctl previous"
+
+## Startup
 
 exec /opt/piavpn/bin/pia-client
 exec_always --no-startup-id ~/.i3/polybar.sh &

@@ -90,6 +90,9 @@ color19 = #303030
 color20 = #B0B0B0
 color21 = #E0E0E0
 
+# Theme pallete
+color250 = #321515
+
 [hints]
 #font = Monospace 12
 #foreground = #dcdccc
