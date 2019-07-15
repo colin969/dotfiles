@@ -434,4 +434,15 @@ bindsym XF86AudioPrev exec "mpc prev; playerctl previous"
 ## Startup
 
 exec /opt/piavpn/bin/pia-client
+exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
+exec --no-startup-id redshift-gtk -l 53.495350:-2.5112 -t 4600:2700
 exec_always --no-startup-id ~/.i3/polybar.sh &
+
+# Terminal autostart
+
+exec --no-startup-id "i3-msg 'workspace 1:Terminal; append_layout /home/colinb/.i3/workspace-term.json'"
+
+exec termite -t cmus -e cmus
+exec termite -t gotop -e "gotop -c red"
+exec termite -t clock -e "tty-clock -c -D -n -s"
+exec termite -t main -e "zsh -c 'neofetch; zsh -i'"
